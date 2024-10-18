@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Nexa', sans-serif;
+  src: url('/src/assets/fonts/Nexa-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'Evers', sans-serif;
+  src: url('/src/assets/fonts/Evers.ttf');
+}
+
+body {
+  background-color: #cbcbcb;
+}
