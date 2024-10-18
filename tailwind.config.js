@@ -12,6 +12,7 @@ export default {
       },
       colors: {
         'light-color': '#c9cdd0',
+        'light-color2': '#bbbbbb',
         'gray-custom1': '#7D7D7D',
         'gray-custom2': '#363636',
         'gray-custom3': '#0D0F11',
