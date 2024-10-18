@@ -1,7 +1,13 @@
+import { Outlet } from "react-router-dom";
+import Menu from "./components/Menu";
+
 export default function App() {
   return (
-    <h1 className="text-6xl font-evers m-10 text-center">
-      Portal de Filmes
-    </h1>
+    <>
+      <div className="flex h-lvh gap-5">
+        <Menu />
+        <Outlet />
+      </div>
+    </>
   )
 }
