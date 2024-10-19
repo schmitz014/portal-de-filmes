@@ -8,8 +8,8 @@ export default function Header() {
                     <img className="w-16" src="/movie.svg" alt="icon movie" />
                     <NavLink to="/"><h1 className="font-evers text-2xl hover:text-gray-500">Portal Filmes</h1></NavLink>
                 </div>
-                <nav className="text-center">
-                    <ul className=" font-nexa text-4xl">
+                <nav className="text-center justify-center items-center flex">
+                    <ul className="font-nexa text-4xl">
                         <li className="hover:scale-110 hover:text-gray-500 transition-all m-10"><NavLink to="/">Home</NavLink></li>
                         <li className="hover:scale-110 hover:text-gray-500 transition-all m-10"><NavLink to="/">Filmes</NavLink></li>
                         <li className="hover:scale-110 hover:text-gray-500 transition-all m-10"><NavLink to="/">Gênero</NavLink></li>

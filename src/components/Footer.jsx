@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa"
 export default function Footer() { 
     return (
         <>
-            <footer>
+            <footer className="mt-auto">
                 <div className="flex item-center justify-center gap-2">
                     <img className="w-8" src="/movie.svg" alt="icon movie" />
                     <h1 className="font-evers text-lg text-nowrap">Portal Filmes</h1>

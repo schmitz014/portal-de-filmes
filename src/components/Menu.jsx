@@ -4,7 +4,7 @@ import Header from "./Header.jsx"
 export default function Menu() {
     return (
         <>
-            <main className="bg-gray-custom3 flex flex-col p-5 w-64 gap-60 text-light-color ">
+            <main className="bg-gray-custom3 flex flex-col p-10 w-64 text-light-color ">
                 <Header />
                 <Footer />
             </main>
