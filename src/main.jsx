@@ -5,6 +5,7 @@ import App from './App.jsx'
 import './index.css'
 
 import Home from './pages/Home.jsx'
+import Movies from './pages/Movies.jsx'
 import PageNotFound from './pages/PageNotFOund.jsx'
 
 const router = createBrowserRouter([
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
+      { path: '/movies', element: <Movies /> },
       { path: '*', element: <PageNotFound /> },
     ]
 
