@@ -3,16 +3,16 @@ import { NavLink } from "react-router-dom";
 export default function Header() {
     return (
         <>
-            <header>
-                <div className="flex item-center justify-center gap-5 mb-20 hover:scale-110 transition-all">
+            <header className="flex justify-between bg-gradient-custom2 items-center">
+                <div className="flex items-center pl-8 gap-10 hover:scale-110 transition-all">
                     <img className="w-16" src="/movie.svg" alt="icon movie" />
-                    <NavLink to="/"><h1 className="font-evers text-2xl hover:text-gray-500">Portal Filmes</h1></NavLink>
+                    <NavLink to="/"><h1 className="font-evers text-5xl text-gray-custom3">Portal Filmes</h1></NavLink>
                 </div>
-                <nav className="text-center justify-center items-center flex">
-                    <ul className="font-nexa text-4xl">
-                        <li className="hover:scale-110 hover:text-gray-500 transition-all m-10"><NavLink to="/">Home</NavLink></li>
-                        <li className="hover:scale-110 hover:text-gray-500 transition-all m-10"><NavLink to="/movies">Filmes</NavLink></li>
-                        <li className="hover:scale-110 hover:text-gray-500 transition-all m-10"><NavLink to="/">Gênero</NavLink></li>
+                <nav>
+                    <ul className="font-nexa text-4xl flex">
+                        <li className="hover:scale-110 hover:font-bold text-gray-custom3 transition-all m-10"><NavLink to="/">Home</NavLink></li>
+                        <li className="hover:scale-110 hover:font-bold text-gray-custom3 transition-all m-10"><NavLink to="/movies">Filmes</NavLink></li>
+                        <li className="hover:scale-110 hover:font-bold text-gray-custom3 transition-all m-10"><NavLink to="/">Gênero</NavLink></li>
                     </ul>
                 </nav>
             </header>

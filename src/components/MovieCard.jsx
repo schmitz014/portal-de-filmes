@@ -15,10 +15,10 @@ export default function MovieCard({ id, title, poster_path, backdrop_path }) {
                 className="relative z-10 w-56 mx-auto my-4 rounded-lg shadow-md"
             />
             
-            <div className="relative z-20 text-center text-wrap text-light-color">
+            <div className="relative z-20 text-center text-wrap text-light-green">
                 <h1 className="font-evers text-2xl">{title}</h1>
                 <div className="mt-10">
-                    <Link to={`/movies/${id}`} className="font-nexa text-2xl"><h3 className="hover:scale-105 hover:font-bold hover:text-sky-400 transition-all">Saber mais</h3></Link>
+                    <Link to={`/movies/${id}`} className="font-nexa text-2xl"><h3 className="hover:scale-105 hover:font-bold hover: transition-all">Saber mais</h3></Link>
                 </div>
             </div>
         </div>

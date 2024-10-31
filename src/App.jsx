@@ -1,12 +1,14 @@
 import { Outlet } from "react-router-dom";
-import Menu from "./components/Menu";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <>
-      <div className="flex h-lvh gap-5">
-        <Menu />
+      <div className="gap-5">
+        <Header />
         <Outlet />
+        <Footer />
       </div>
     </>
   )
