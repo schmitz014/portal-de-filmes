@@ -15,3 +15,75 @@
 body {
   background-color: #b0ebb2;
 }
+
+/* styles.css */
+
+/* Estilo para o contêiner do carrossel */
+.slick-slider {
+  margin: 0 auto;
+  /* Centraliza o carrossel */
+}
+
+/* Estilo para cada slide */
+.slick-slide {
+  display: flex;
+  /* Permite flexbox para o alinhamento */
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente */
+  padding: 10px;
+  /* Espaçamento ao redor de cada slide */
+}
+
+/* Estilo para os botões de navegação */
+.slick-prev, .slick-next {
+  z-index: 1;
+  /* Faz os botões aparecerem acima do conteúdo */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fundo semitransparente */
+  color: white;
+  /* Cor do ícone */
+  border-radius: 50%;
+  /* Bordas arredondadas */
+  padding: 8px;
+  /* Padding ao redor do ícone */
+  transition: background-color 0.3s;
+  /* Transição suave para o fundo */
+}
+
+/* Efeito ao passar o mouse sobre os botões */
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fundo claro ao passar o mouse */
+  color: black;
+  /* Cor do ícone ao passar o mouse */
+}
+
+/* Estilo para a lista de slides */
+.slick-list {
+  margin: 0 -10px;
+  /* Ajusta as margens laterais para o alinhamento */
+}
+
+/* Estilo para cada card de filme */
+.movie-card {
+  border-radius: 8px;
+  /* Bordas arredondadas */
+  overflow: hidden;
+  /* Corta as bordas arredondadas */
+  transition: transform 0.3s;
+  /* Transição suave ao passar o mouse */
+}
+
+/* Efeito de aumento ao passar o mouse sobre o card */
+.movie-card:hover {
+  transform: scale(1.05);
+  /* Aumenta o tamanho do card */
+}
+
+/* Para ocultar o scrollbar do carrossel (opcional) */
+.slick-slider::-webkit-scrollbar {
+  display: none;
+  /* Oculta o scrollbar */
+}
