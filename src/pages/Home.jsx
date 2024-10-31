@@ -35,16 +35,16 @@ export default function Home() {
     }, []);
 
     return (
-        <>
-            <CardContainer titulo="Populares">
-                {
-                    filmesPopulares?.map(filme => (
-                        <MovieCard key={filme.id} {...filme} />
-                    ))
-                }
+        <div className="space-y-5">
+            <CardContainer title="Populares">
+              {
+                filmesPopulares?.map(filme => (
+                    <MovieCard key={filme.id} {...filme}/>
+                ))
+              }
             </CardContainer>
 
-            <CardContainer titulo="Trending">
+            <CardContainer title="Trending">
                 {
                     filmesTrending?.map(filme => (
                         <MovieCard key={filme.id} {...filme} />
@@ -52,13 +52,13 @@ export default function Home() {
                 }
             </CardContainer>
 
-            <CardContainer titulo="Próximos Lançamentos">
+            <CardContainer title="Próximos Lançamentos">
                 {
                     filmesUpcoming?.map(filme => (
                         <MovieCard key={filme.id} {...filme} />
                     ))
                 }
             </CardContainer>
-        </>
+        </div>
     );
 }
