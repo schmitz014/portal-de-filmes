@@ -11,7 +11,7 @@ export default function Header() {
                 <nav className="text-center justify-center items-center flex">
                     <ul className="font-nexa text-4xl">
                         <li className="hover:scale-110 hover:text-gray-500 transition-all m-10"><NavLink to="/">Home</NavLink></li>
-                        <li className="hover:scale-110 hover:text-gray-500 transition-all m-10"><NavLink to="/">Filmes</NavLink></li>
+                        <li className="hover:scale-110 hover:text-gray-500 transition-all m-10"><NavLink to="/movies">Filmes</NavLink></li>
                         <li className="hover:scale-110 hover:text-gray-500 transition-all m-10"><NavLink to="/">Gênero</NavLink></li>
                     </ul>
                 </nav>
