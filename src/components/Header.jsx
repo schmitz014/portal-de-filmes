@@ -12,7 +12,7 @@ export default function Header() {
                     <ul className="font-nexa text-4xl flex">
                         <li className="hover:scale-110 hover:font-bold text-gray-custom3 transition-all m-10"><NavLink to="/">Home</NavLink></li>
                         <li className="hover:scale-110 hover:font-bold text-gray-custom3 transition-all m-10"><NavLink to="/movies">Filmes</NavLink></li>
-                        <li className="hover:scale-110 hover:font-bold text-gray-custom3 transition-all m-10"><NavLink to="/">Gênero</NavLink></li>
+                        <li className="hover:scale-110 hover:font-bold text-gray-custom3 transition-all m-10"><NavLink to="/genres">Gênero</NavLink></li>
                     </ul>
                 </nav>
             </header>
