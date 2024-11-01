@@ -11,7 +11,7 @@ export default function Home() {
     const [currentSlideTrending, setCurrentSlideTrending] = useState(0);
     const [currentSlideUpcoming, setCurrentSlideUpcoming] = useState(0);
 
-    const itemsPerPage = 4; // Número de filmes visíveis por slide
+    const itemsPerPage = 4;
 
     const fetchMovies = async () => {
         try {
