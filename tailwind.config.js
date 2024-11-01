@@ -15,6 +15,7 @@ export default {
         'light-color2': '#bbbbbb',
         'light-green': '#b0ebb2',
         'medium-green': '#04ff0e',
+        'dark-green': 'rgba(28,101,22,1)',
         'gray-custom1': '#7D7D7D',
         'gray-custom2': '#363636',
         'gray-custom3': '#0D0F11',
