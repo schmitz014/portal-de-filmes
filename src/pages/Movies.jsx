@@ -9,7 +9,7 @@ export default function MovieListPage() {
 
     useEffect(() => {
         setIsLoading(true)
-        fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${import.meta.env.VITE_API_KEY}&language=pt-BR&sort_by=popularity.desc&page=1`)
+        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${import.meta.env.VITE_API_KEY}&language=pt-br`)
             .then(response => response.json())
             .then(data => setFilmes(data.results))
             .catch(error => console.error(error))
