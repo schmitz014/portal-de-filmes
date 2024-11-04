@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { FavoritesContext } from '../components/FavoritesContext';
+import { FavoritesContext } from '../contexts/FavoritesContext';
 import MovieCard from '../components/MovieCard';
 
 export default function Favorites() {
@@ -41,12 +41,12 @@ export default function Favorites() {
 
     if (isLoading) return <p>Carregando favoritos...</p>;
     if (error) return <p>Erro: {error}</p>;
-    if (favorites.length === 0) return <p>Você ainda não possui favoritos 😞</p>;
+    if (favorites.length === 0) return <p className='font-evers text-3xl text-center mt-10 '>Você ainda não possui favoritos 😞</p>;
 
     return (
         <div className="container mx-auto mt-8">
-            <h2 className="text-xl font-bold mb-4">Seus Favoritos</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <h2 className="text-3xl font-evers mb-4">Seus Favoritos</h2>
+            <div className="grid grid-cols-4 gap-5">
                 {favoriteMovies.map(movie => (
                     <MovieCard
                         key={movie.id}
