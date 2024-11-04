@@ -22,6 +22,7 @@ export default function Header() {
                         <li className="hover:font-bold text-gray-custom3 transition-all m-10"><NavLink to="/">Home</NavLink></li>
                         <li className="hover:font-bold text-gray-custom3 transition-all m-10"><NavLink to="/movies">Filmes</NavLink></li>
                         <li className="hover:font-bold text-gray-custom3 transition-all m-10"><NavLink to="/genres">Gênero</NavLink></li>
+                        {isLogged && <li className="hover:font-bold text-gray-custom3 transition-all m-10"><NavLink to="/favorites">Favoritos</NavLink></li>}
                     </ul>
                 </nav>
                 <Login isLogged={isLogged} handleLogin={handleLogin} />
