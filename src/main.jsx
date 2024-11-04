@@ -6,11 +6,11 @@ import './index.css'
 
 import Home from './pages/Home.jsx'
 import Movies from './pages/Movies.jsx'
-import PageNotFound from './pages/PageNotFound.jsx'
 import MovieDetails from './pages/MovieDetails.jsx'
 import GenreList from './pages/Genre.jsx'
 import GenreMovies from './pages/GenreMovies.jsx'
 import Favorites from './pages/Favorites.jsx'
+import PageNotFound from './pages/PageNotFound.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       { path: '/genres/', element: <GenreList /> },
       { path: '/genre/:id', element: <GenreMovies /> },
       { path: '/favorites', element: <Favorites /> },
-      { path: '*', element: <PageNotFound /> },
+      { path: '*', element: <PageNotFound /> }
     ]
 
   }
